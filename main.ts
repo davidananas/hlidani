@@ -1,4 +1,4 @@
-input.onPinPressed(TouchPin.P0, function () {
+input.onPinReleased(TouchPin.P0, function () {
     basic.showIcon(IconNames.Angry)
     for (let index = 0; index < 100; index++) {
         music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 1, 5000, 255, 255, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
