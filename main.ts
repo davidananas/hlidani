@@ -1,4 +1,10 @@
-input.onPinReleased(TouchPin.P0, function () {
+input.onButtonPressed(Button.A, function () {
+    Vstup = "" + Vstup + "A"
+})
+input.onButtonPressed(Button.B, function () {
+    Vstup = "" + Vstup + "B"
+})
+input.onGesture(Gesture.Shake, function () {
     houkání = 0
     basic.showIcon(IconNames.Angry)
     while (houkání == 0) {
@@ -6,14 +12,8 @@ input.onPinReleased(TouchPin.P0, function () {
         music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     }
 })
-input.onButtonPressed(Button.A, function () {
-    Vstup = "" + Vstup + "A"
-})
-input.onButtonPressed(Button.B, function () {
-    Vstup = "" + Vstup + "B"
-})
-let Vstup = ""
 let houkání = 0
+let Vstup = ""
 let Heslo = "ABAB"
 basic.forever(function () {
     if (Heslo == Vstup) {
