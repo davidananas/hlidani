@@ -11,7 +11,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Angry)
     while (houkání == 0) {
         music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1, 5000, 255, 255, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 255, 255, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
